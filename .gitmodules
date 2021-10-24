@@ -1,0 +1,12 @@
+[submodule "udagram-reverseproxy"]
+	path = udagram-reverseproxy
+	url = git@github.com:calopez/udagram-reverseproxy.git
+[submodule "udagram-frontend"]
+	path = udagram-frontend
+	url = git@github.com:calopez/udagram-frontend.git
+[submodule "udagram-api-user"]
+	path = udagram-api-user
+	url = git@github.com:calopez/udagram-api-user.git
+[submodule "udagram-api-feed"]
+	path = udagram-api-feed
+	url = git@github.com:calopez/udagram-api-feed.git
