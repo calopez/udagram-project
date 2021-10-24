@@ -35,6 +35,6 @@ services:
       UDC_JWT_SECRET: $UDC_JWT_SECRET
       UDC_URL: $UDC_URL
   frontend:
-    image: udagram-frontend:local
+    image: udagram-frontend
     ports:
       - "8100:80"
