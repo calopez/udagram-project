@@ -1,0 +1,27 @@
+language: minimal
+
+services:
+  - docker
+
+# Pre-testing installs
+install:
+  - echo "nothing needs to be installed"
+
+# Scripts to be run such as tests
+before_script:
+  - echo "no tests at all"
+
+script:
+  - docker --version
+  - docker-compose -f docker-compose-build.yaml build --parallel
+  - docker tag udagram-reverseproxy karloslopez/udagram-reverseproxy:v1
+  - docker tag udagram-frontend karloslopez/udagram-frontend:v1
+  - docker tag udagram-api-user karloslopez/udagram-api-user:v1
+  - docker tag udagram-api-feed karloslopez/udagram-api-feed:v1
+
+after_success:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push karloslopez/udagram-reverseproxy:v1
+  - docker push karloslopez/udagram-frontend:v1
+  - docker push karloslopez/udagram-api-user:v1
+  - docker push karloslopez/udagram-api-feed:v1
