@@ -8,7 +8,6 @@ data:
   UDC_URL: http://localhost:8100
 kind: ConfigMap
 metadata:
-  creationTimestamp: 2021-10-31T19:17:42Z
   managedFields:
   - apiVersion: v1
     fieldsType: FieldsV1
@@ -26,5 +25,3 @@ metadata:
     time: 2021-10-31T19:17:42Z
   name: env-configmap
   namespace: default
-  resourceVersion: "14304"
-  uid: 4748279f-29b4-47be-bb38-acac6b594eb7
