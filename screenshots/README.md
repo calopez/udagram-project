@@ -34,7 +34,7 @@ kubectl describe services
 ```bash
 kubectl describe hpa
 ```
-<img width="1915" alt="Screen Shot 2021-11-28 at 12 09 34" src="https://user-images.githubusercontent.com/3010579/143778596-8154bb64-280b-4538-8316-00c3a329599f.png">
+<img width="1912" alt="kubectl-describe-hpa-II" src="https://user-images.githubusercontent.com/3010579/146457971-afdf88b4-4e55-4415-8af7-1f089832657d.png">
 
 * To verify that you have set up logging with a backend application
 ```bash
